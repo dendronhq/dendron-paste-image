@@ -1,9 +1,9 @@
 {
-  "name": "vscode-paste-image",
-  "displayName": "Paste Image",
+  "name": "dendron-paste-image",
+  "displayName": "Dendron Paste Image",
   "description": "paste image from clipboard directly",
   "version": "1.0.4",
-  "publisher": "mushan",
+  "publisher": "dendron",
   "author": {
     "name": "mushan",
     "email": "mushanmail@126.com"
