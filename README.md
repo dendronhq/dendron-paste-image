@@ -1,5 +1,7 @@
 # Paste Image
 
+🚨This is a fork of [Past Images](https://github.com/mushanshitiancai/vscode-paste-image/blob/master/README.md) to support Dendron specific features! 🚨
+
 Paste image directly from clipboard to markdown/asciidoc(or other file)!
 
 **Support Mac/Windows/Linux!** And support config destination folder.
@@ -16,7 +18,7 @@ Now you can enable `pasteImage.showFilePathConfirmInputBox` to modify file path 
 2. Open the command palette: `Ctrl+Shift+P` (`Cmd+Shift+P` on Mac)
 3. Type: "Paste Image" or you can use default keyboard binding: `Ctrl+Alt+V` (`Cmd+Alt+V` on Mac).
 4. Image will be saved in the folder that contains current editing file
-5. The relative path will be paste to current editing file 
+5. The relative path will be paste to current editing file
 
 ## Config
 
@@ -36,10 +38,10 @@ Now you can enable `pasteImage.showFilePathConfirmInputBox` to modify file path 
 - `pasteImage.path`
 
     The destination to save image file.
-    
+
     You can use variable:
-    
-    - `${currentFileDir}`: the path of directory that contain current editing file. 
+
+    - `${currentFileDir}`: the path of directory that contain current editing file.
     - `${projectRoot}`: the path of the project opened in vscode.
     - `${currentFileName}`: the current file name with ext.
     - `${currentFileNameWithoutExt}`: the current file name without ext.
@@ -49,10 +51,10 @@ Now you can enable `pasteImage.showFilePathConfirmInputBox` to modify file path 
 - `pasteImage.basePath`
 
     The base path of image url.
-    
+
     You can use variable:
-    
-    - `${currentFileDir}`: the path of directory that contain current editing file. 
+
+    - `${currentFileDir}`: the path of directory that contain current editing file.
     - `${projectRoot}`: the path of the project opened in vscode.
     - `${currentFileName}`: the current file name with ext.
     - `${currentFileNameWithoutExt}`: the current file name without ext.
@@ -61,8 +63,8 @@ Now you can enable `pasteImage.showFilePathConfirmInputBox` to modify file path 
 
 - `pasteImage.forceUnixStyleSeparator`
 
-    Force set the file separator style to unix style. If set false, separator style will follow the system style. 
-    
+    Force set the file separator style to unix style. If set false, separator style will follow the system style.
+
     Default is `true`.
 
 - `pasteImage.prefix`
@@ -92,8 +94,8 @@ Now you can enable `pasteImage.showFilePathConfirmInputBox` to modify file path 
     The string prepend to the image file name.
 
     You can use variable:
-    
-    - `${currentFileDir}`: the path of directory that contain current editing file. 
+
+    - `${currentFileDir}`: the path of directory that contain current editing file.
     - `${projectRoot}`: the path of the project opened in vscode.
     - `${currentFileName}`: the current file name with ext.
     - `${currentFileNameWithoutExt}`: the current file name without ext.
@@ -105,8 +107,8 @@ Now you can enable `pasteImage.showFilePathConfirmInputBox` to modify file path 
     The string append to the image name.
 
     You can use variable:
-    
-    - `${currentFileDir}`: the path of directory that contain current editing file. 
+
+    - `${currentFileDir}`: the path of directory that contain current editing file.
     - `${projectRoot}`: the path of the project opened in vscode.
     - `${currentFileName}`: the current file name with ext.
     - `${currentFileNameWithoutExt}`: the current file name without ext.
@@ -116,17 +118,17 @@ Now you can enable `pasteImage.showFilePathConfirmInputBox` to modify file path 
 - `pasteImage.insertPattern`
 
     The pattern of string that would be pasted to text.
-    
+
     You can configure both the alt text and the file path.
     For example, `![${imageFileNameWithoutExt}](${imageFilePath})` would add the file name as the alt text instead of the default (blank).
-    
+
     You can use the following variables:
 
     - `${imageFilePath}`: the image file path, with `pasteImage.prefix`, `pasteImage.suffix`, and url encoded.
     - `${imageOriginalFilePath}`: the image file path.
     - `${imageFileName}`:  the image file name with ext.
     - `${imageFileNameWithoutExt}`: the image file name without ext.
-    - `${currentFileDir}`: the path of directory that contain current editing file. 
+    - `${currentFileDir}`: the path of directory that contain current editing file.
     - `${projectRoot}`: the path of the project opened in vscode.
     - `${currentFileName}`: the current file name with ext.
     - `${currentFileNameWithoutExt}`: the current file name without ext.
