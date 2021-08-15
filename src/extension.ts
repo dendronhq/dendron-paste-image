@@ -352,7 +352,10 @@ class Paster {
             ascript.stdout.on('data', function (data: Buffer) {
                 let result = data.toString().trim();
                 if (result == "no xclip") {
-                    Logger.showInformationMessage('You need to install xclip command first.');
+                    Logger.showInformationMessage('You need to install the xclip command first.');
+                    return;
+                } else if (result == "no wl-paste") {
+                    Logger.showInformationMessage('You need to install the wl-paste command first.');
                     return;
                 }
                 cb(imagePath, result);
