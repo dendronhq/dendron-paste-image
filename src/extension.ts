@@ -309,7 +309,7 @@ class Paster {
                 '-file', scriptPath,
                 imagePath
             ]);
-            powershell.on('error', function (e) {
+            powershell.on('error', function (e: any) {
                 if (e.code == "ENOENT") {
                     Logger.showErrorMessage(`The powershell command is not in you PATH environment variables. Please add it and retry.`);
                 } else {
@@ -328,7 +328,7 @@ class Paster {
             let scriptPath = path.join(__dirname, '../../res/mac.applescript');
 
             let ascript = spawn('osascript', [scriptPath, imagePath]);
-            ascript.on('error', function (e) {
+            ascript.on('error', function (e: any) {
                 Logger.showErrorMessage(e);
             });
             ascript.on('exit', function (code, signal) {
@@ -343,7 +343,7 @@ class Paster {
             let scriptPath = path.join(__dirname, '../../res/linux.sh');
 
             let ascript = spawn('sh', [scriptPath, imagePath]);
-            ascript.on('error', function (e) {
+            ascript.on('error', function (e: any) {
                 Logger.showErrorMessage(e);
             });
             ascript.on('exit', function (code, signal) {
