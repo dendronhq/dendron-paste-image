@@ -17,7 +17,9 @@ Now you can enable `pasteImage.showFilePathConfirmInputBox` to modify file path 
 
 ## Prerequisites
 
-For Linux users, you'll need to have [`xclip`](https://opensource.com/article/19/7/xclip) (or [`wl-paste`](https://github.com/bugaevc/wl-clipboard) if using Wayland) installed.
+- **Linux**: You'll need to have [`xclip`](https://opensource.com/article/19/7/xclip) (or [`wl-paste`](https://github.com/bugaevc/wl-clipboard) if using Wayland) installed
+- **MacOS**: `pbpaste` command is required, which should be available by default on all MacOS
+- **Windows**: `powershell` command is required, which should be available by default on all Windows
 
 ## Usage
 
