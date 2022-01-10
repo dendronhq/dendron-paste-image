@@ -1,16 +1,25 @@
 # Paste Image
 
-🚨This is a fork of [Past Images](https://github.com/mushanshitiancai/vscode-paste-image/blob/master/README.md) to support Dendron specific features! 🚨
+🚨This is a fork of [Paste Images](https://github.com/mushanshitiancai/vscode-paste-image/blob/master/README.md) to support Dendron specific features! 🚨
 
-Paste image directly from clipboard to markdown/asciidoc(or other file)!
+Paste images directly from your clipboard to markdown/asciidoc(or other file)!
 
-**Support Mac/Windows/Linux!** And support config destination folder.
+Supports:
+
+- **Mac/Windows/Linux**
+- Configuration of destination folder where pasted image will be saved
 
 ![paste-image](https://raw.githubusercontent.com/mushanshitiancai/vscode-paste-image/master/res/vscode-paste-image.gif)
 
 Now you can enable `pasteImage.showFilePathConfirmInputBox` to modify file path before save:
 
 ![confirm-inputbox](https://raw.githubusercontent.com/mushanshitiancai/vscode-paste-image/master/res/confirm-inputbox.png)
+
+## Prerequisites
+
+- **Linux**: You'll need to have [`xclip`](https://opensource.com/article/19/7/xclip) (or [`wl-paste`](https://github.com/bugaevc/wl-clipboard) if using Wayland) installed
+- **MacOS**: `pbpaste` command is required, which should be available by default on all MacOS
+- **Windows**: `powershell` command is required, which should be available by default on all Windows
 
 ## Usage
 
