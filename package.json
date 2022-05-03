@@ -117,7 +117,7 @@
     "commands": [
       {
         "command": "extension.pasteImage",
-        "title": "Paste Image"
+        "title": "Dendron: Paste Image"
       }
     ],
     "keybindings": [
