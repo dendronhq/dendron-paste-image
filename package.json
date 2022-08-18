@@ -2,7 +2,7 @@
   "name": "dendron-paste-image",
   "displayName": "Dendron Paste Image",
   "description": "paste image from clipboard directly",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "publisher": "dendron",
   "author": {
     "name": "mushan",
@@ -38,6 +38,7 @@
     "onCommand:extension.pasteImage"
   ],
   "main": "./out/src/extension",
+  "browser": "./dist/web/extension.js",
   "contributes": {
     "configuration": {
       "type": "object",
@@ -130,8 +131,11 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "tsc",
-    "compile": "tsc -watch -p ./"
+    "vscode:prepublish": "tsc && npm run package-web",
+    "compile": "tsc -watch -p ./",
+    "compile-web": "webpack",
+    "watch-web": "webpack --watch",
+    "package-web": "webpack --mode production --devtool hidden-source-map"
   },
   "dependencies": {
     "copy-paste": "^1.2.0",
@@ -142,6 +146,10 @@
   "devDependencies": {
     "@types/node": "^16.6.1",
     "@types/vscode": "^1.54.0",
-    "vscode-test": "^1.6.1"
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
+    "vscode-test": "^1.6.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   }
 }

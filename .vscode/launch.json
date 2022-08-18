@@ -23,6 +23,18 @@
             "sourceMaps": true,
             "outDir": "${workspaceRoot}/out/test",
             "preLaunchTask": "npm"
-        }
+        },
+        {
+            "name": "Run Web Extension in VS Code",
+            "type": "pwa-extensionHost",
+            "debugWebWorkerHost": true,
+            "request": "launch",
+            "args": [
+              "--extensionDevelopmentPath=${workspaceFolder}",
+              "--extensionDevelopmentKind=web"
+            ],
+            "outFiles": ["${workspaceFolder}/dist/web/**/*.js"],
+            "preLaunchTask": "npm: watch-web"
+          }
     ]
 }
