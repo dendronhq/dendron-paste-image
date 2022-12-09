@@ -109,7 +109,7 @@ class Paster {
         // load config pasteImage.path
         this.folderPathConfig = vscode.workspace.getConfiguration('pasteImage')['path'];
         if (!this.folderPathConfig) {
-            this.folderPathConfig = "${currentFileDir}";
+            this.folderPathConfig = "${currentFileDir}/assets";
         }
         if (this.folderPathConfig.length !== this.folderPathConfig.trim().length) {
             Logger.showErrorMessage(`The config pasteImage.path = '${this.folderPathConfig}' is invalid. please check your config.`);
