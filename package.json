@@ -1,7 +1,7 @@
 {
   "name": "dendron-paste-image",
   "displayName": "Dendron Paste Image",
-  "description": "paste image from clipboard directly",
+  "description": "paste images using clipboard",
   "version": "1.1.1",
   "publisher": "dendron",
   "author": {
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mushanshitiancai/vscode-paste-image.git"
+    "url": "https://github.com/dendron-paste-image/vscode-paste-image.git"
   },
-  "homepage": "https://github.com/mushanshitiancai/vscode-paste-image/blob/master/README.md",
+  "homepage": "https://github.com/dendron-paste-image/vscode-paste-image/blob/master/README.md",
   "bugs": {
-    "url": "https://github.com/mushanshitiancai/vscode-paste-image/issues"
+    "url": "https://github.com/dendron-paste-image/vscode-paste-image/issues"
   },
   "icon": "res/icon.png",
   "galleryBanner": {
